@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" padding="20.0" xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField fx:id="produitField" promptText="Produit" />
+        <TextField fx:id="categorieField" promptText="Catégorie" />
+        <TextField fx:id="quantiteField" promptText="Quantité" />
+        <TextField fx:id="prixField" promptText="Prix unitaire" />
+        <Button text="Ajouter" onAction="#ajouterVente" />
+    </children>
+</VBox>

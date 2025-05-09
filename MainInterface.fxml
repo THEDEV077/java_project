@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <VBox alignment="CENTER" prefWidth="180.0" spacing="10.0" style="-fx-background-color: #f5f0e8;">
+         <padding>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+         <children>
+            <Button fx:id="btnImport" onAction="#Import" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Import" />
+            <Button fx:id="btnAnalyse" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Analyse" />
+            <Button fx:id="btnTopProduits" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Top Produits" />
+            <Button fx:id="btnGraphiques" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Graphiques" />
+            <Button fx:id="btnFormulaire" onAction="#loadFormulaire" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Formulaire" />
+            <Button fx:id="btnDelete" onAction="#DeleteVente" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Delete Vente" />
+            <Button fx:id="btnModify" onAction="#ModifyVente" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Modify Vente" />
+            <Button fx:id="btnChargerBDD" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Charger BDD" />
+            <Button fx:id="btnExport" onAction="#Export" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Export" />
+            <Button fx:id="btnSave" onAction="#SaveVentes" prefWidth="140.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold;" text="Save" />
+         </children>
+      </VBox>
+      <StackPane fx:id="contentPane" prefWidth="620.0" style="-fx-background-color: #fdf7ef;">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children></StackPane>
+   </children>
+</HBox>
